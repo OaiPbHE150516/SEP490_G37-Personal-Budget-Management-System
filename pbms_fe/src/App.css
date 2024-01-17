@@ -36,3 +36,36 @@
     transform: rotate(360deg);
   }
 }
+
+.App {
+  display: flex;
+}
+/* Card */
+.Card {
+  background: #dfdfdf;
+  width: 100%;
+}
+.Account {
+  background: #dfdfdf;
+  width: 100%;
+}
+.Transaction {
+  background: #dfdfdf;
+  width: 100%;
+}
+.Diary {
+  background: #dfdfdf;
+  width: 100%;
+}
+.Cost {
+  background: #dfdfdf;
+  width: 100%;
+}
+.Chart {
+  background: #dfdfdf;
+  width: 100%;
+}
+.Calendar {
+  background: #dfdfdf;
+  width: 100%;
+}
