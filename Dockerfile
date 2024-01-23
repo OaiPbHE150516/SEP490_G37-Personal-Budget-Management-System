@@ -24,6 +24,8 @@
 # COPY --from=publish /app/publish .
 # ENTRYPOINT ["dotnet", "pbms_be.dll"]
 
+# yaml file: https://scriptbytes.io/setup-and-deploy-angular-app-to-google-cloud-run/
+
 
 
 # rewrite the dockerfile to use subdirectories for the build and publish steps in pbms_be folder
