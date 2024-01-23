@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\pbms_be.props" />
+</Project>
