@@ -403,3 +403,5 @@ FodyWeavers.xsd
 pbms_be/bin/Debug/net8.0/pbms_be.dll
 pbms_be/bin/Debug/net8.0/pbms_be.exe
 pbms_be/bin/Debug/net8.0/pbms_be.pdb
+*.cache
+*.cache
