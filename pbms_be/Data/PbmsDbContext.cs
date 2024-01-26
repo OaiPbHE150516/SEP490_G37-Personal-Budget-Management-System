@@ -24,7 +24,7 @@ namespace pbms_be.Data
                 var databaseName = System.Environment.GetEnvironmentVariable("DB_NAME");
                 var userId = System.Environment.GetEnvironmentVariable("DB_USER");
                 var password = System.Environment.GetEnvironmentVariable("DB_PASS");
-                connectionString = $"Host=/cloudsql/{instanceConnectionName};User Id={userId};Password={password};Database={databaseName}";
+                connectionString = $"Host={instanceConnectionName};User Id={userId};Password={password};Database={databaseName}";
                 //connectionString = "Host=/cloudsql/lexical-aileron-410114:asia-southeast1:pbmspostgresql;User Id=postgres;Password=123456789;Database=postgres";
             }
             else
