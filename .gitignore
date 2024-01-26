@@ -422,3 +422,5 @@ pbms_be/obj/project.nuget.cache
 pbms_be/obj/project.assets.json
 pbms_be/obj/Debug/net8.0/pbms_be.csproj.CoreCompileInputs.cache
 *.cache
+pbms_be/obj/Debug/net8.0/pbms_be.AssemblyInfo.cs
+pbms_be/obj/Debug/net8.0/pbms_be.AssemblyInfoInputs.cache

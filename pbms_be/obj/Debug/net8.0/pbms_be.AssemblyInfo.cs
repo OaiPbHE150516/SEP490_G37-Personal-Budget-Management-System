@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("pbms_be")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f8c8be2c9f6934b19201077dea74f4382662c2fc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ccd4d5bbbc0ead107c39d4dd78c308f17c55db5c")]
 [assembly: System.Reflection.AssemblyProductAttribute("pbms_be")]
 [assembly: System.Reflection.AssemblyTitleAttribute("pbms_be")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
