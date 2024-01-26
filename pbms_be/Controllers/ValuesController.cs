@@ -41,19 +41,19 @@ namespace pbms_be.Controllers
         [HttpGet("getip")]
         public string GetMyIp()
         {
-            //string ip = "";
-            //string hostName = Dns.GetHostName();
-            //IPHostEntry ipHostInfo = Dns.GetHostEntry(hostName);
-            //foreach (IPAddress address in ipHostInfo.AddressList)
-            //{
-            //    if (address.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork)
-            //    {
-            //        ip = address.ToString();
-            //    }
-            //}
-            //return ip;
-            var ip = new WebClient().DownloadString("http://icanhazip.com");
+            string ip = "";
+            string hostName = Dns.GetHostName();
+            IPHostEntry ipHostInfo = Dns.GetHostEntry(hostName);
+            foreach (IPAddress address in ipHostInfo.AddressList)
+            {
+                if (address.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork)
+                {
+                    ip = address.ToString();
+                }
+            }
             return ip;
+            //var ip = new WebClient().DownloadString("http://icanhazip.com");
+            //return ip;
         }
     }
 }
