@@ -20,6 +20,11 @@ namespace pbms_be.Data
             if (System.Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "Production")
             {
                 var instanceConnectionName = System.Environment.GetEnvironmentVariable("INSTANCE_UNIX_SOCKET");
+                // throw ecxeption if not set
+                if (instanceConnectionName == null)
+                {
+                    throw new System.Exception("INSTANCE_UNIX_SOCKET not set");
+                }
                 var databaseName = System.Environment.GetEnvironmentVariable("DB_NAME");
                 var userId = System.Environment.GetEnvironmentVariable("DB_USER");
                 var password = System.Environment.GetEnvironmentVariable("DB_PASS");
