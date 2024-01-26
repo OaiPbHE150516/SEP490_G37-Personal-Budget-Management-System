@@ -406,8 +406,7 @@ pbms_be/bin/Debug/net8.0/pbms_be.pdb
 *.cache
 *.cache
 # Ignore any files in /bin and /obj Folders inside pbms_be folder
-*pbms_be/bin/*
-*pbms_be/obj/*
+pbms_be/bin/*
 pbms_be/obj/Debug/net8.0/pbms_be.AssemblyInfo.cs
 *.cache
 pbms_be/obj/project.nuget.cache
@@ -422,5 +421,7 @@ pbms_be/obj/project.nuget.cache
 pbms_be/obj/project.assets.json
 pbms_be/obj/Debug/net8.0/pbms_be.csproj.CoreCompileInputs.cache
 *.cache
+pbms_be/obj/Debug/net8.0/pbms_be.AssemblyInfo.cs
+pbms_be/obj/Debug/net8.0/pbms_be.AssemblyInfoInputs.cache
 pbms_be/obj/Debug/net8.0/pbms_be.AssemblyInfo.cs
 pbms_be/obj/Debug/net8.0/pbms_be.AssemblyInfoInputs.cache

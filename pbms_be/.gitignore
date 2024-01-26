@@ -411,5 +411,5 @@ pbms_be/bin/Debug/net8.0/pbms_be.pdb
 **/obj/*
 
 # Ignore any files in /bin and /obj Folders inside pbms_be folder
-*pbms_be/bin/*
-*pbms_be/obj/*
+pbms_be/bin/*
+pbms_be/obj/*
