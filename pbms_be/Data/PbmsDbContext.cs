@@ -18,14 +18,14 @@ namespace pbms_be.Data
         {
             var connectionString = "";
             // check if running on GCP or local machine
-            if (System.Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "Production")
-            {
+            //if (System.Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "Production")
+            //{
                 connectionString = "Host=/cloudsql/lexical-aileron-410114:asia-southeast1:pbmspostgresql;User Id=postgres;Password=123456789;Database=postgres";
-            }
-            else
-            {
-                connectionString = "Host=35.198.233.122;User Id=postgres;Password=123456789;Database=postgres";
-            }
+            //}
+            //else
+            //{
+            //    connectionString = "Host=35.198.233.122;User Id=postgres;Password=123456789;Database=postgres";
+            //}
             optionsBuilder.UseNpgsql(connectionString);
         }
     }
