@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
 using pbms_be.Data;
+using System.Net;
 using System.Text;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -23,7 +25,9 @@ namespace pbms_be.Controllers
         [HttpGet]
         public IEnumerable<Sample> Get()
         {
-            return _context.Sample;
+            //IEnumerable<Sample> result = _context.Sample;
+            IEnumerable<Sample> result = _context.Sample.FromSqlRaw("SELECT * FROM sample");
+            return result;
         }
 
         // GET api/<ValuesController>/5
@@ -32,6 +36,24 @@ namespace pbms_be.Controllers
         {
             var result = _context.Sample.Find(id);
             return result;
+        }
+
+        [HttpGet("getip")]
+        public string GetMyIp()
+        {
+            //string ip = "";
+            //string hostName = Dns.GetHostName();
+            //IPHostEntry ipHostInfo = Dns.GetHostEntry(hostName);
+            //foreach (IPAddress address in ipHostInfo.AddressList)
+            //{
+            //    if (address.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork)
+            //    {
+            //        ip = address.ToString();
+            //    }
+            //}
+            //return ip;
+            var ip = new WebClient().DownloadString("http://icanhazip.com");
+            return ip;
         }
     }
 }
