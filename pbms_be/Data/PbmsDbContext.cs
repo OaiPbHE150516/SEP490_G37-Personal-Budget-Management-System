@@ -28,11 +28,8 @@ namespace pbms_be.Data
             else
             {
                 var env = System.Environment.GetEnvironmentVariable("PBMS_CONNECTION_STRING");
-                if (env == null)
-                {
-                    connectionString = _configuration.GetConnectionString("ConnectionString");
-                    throw new System.Exception("Connection string not set");
-                }
+                var env2 = _configuration.GetConnectionString("ConnectionString");
+                connectionString = env ?? env2 ?? throw new System.Exception("Connection string not set");
             }
             optionsBuilder.UseNpgsql(connectionString);
         }
