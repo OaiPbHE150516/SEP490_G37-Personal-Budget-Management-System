@@ -17,7 +17,8 @@ namespace pbms_be.Data
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             //var connectionString = _configuration.GetConnectionString("ConnectionString");
-            var connectionString = "Host=35.198.233.122;User Id=postgres;Password=123456789;Database=postgres";
+            //var connectionString = "Host=35.198.233.122;User Id=postgres;Password=123456789;Database=postgres";
+            var connectionString = "Host=/cloudsql/lexical-aileron-410114:asia-southeast1:pbmspostgresql;User Id=postgres;Password=123456789;Database=postgres";
             optionsBuilder.UseNpgsql(connectionString);
         }
     }
